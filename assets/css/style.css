@@ -169,12 +169,15 @@ main {
 }
 
 /*game one relevant css*/
-main {
-    margin: 10px;
+#game-one-main {
+    /*margin: 10px;*/
     display: flex;
     justify-content: center;
     background-color: var(--background-color);
     color: var(--game-one-color);
+    border: dashed var(--game-one-color);
+    width:100vw;
+    height: 85vh;
 }
 
 #instructions {
@@ -184,6 +187,8 @@ main {
 }
 
 #runner {
+    margin: 50px;
+    padding: 5px;
     width: 600px;
     height: 600px;
     border: 40px solid var(--game-one-color);
