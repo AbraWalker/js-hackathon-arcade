@@ -39,6 +39,7 @@
     padding-right: 1em;
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 
 /*separate the list items for readability*/
@@ -358,7 +359,7 @@ main {
 
 .PacmanParagraph {
     color: #fff;
-    font-family: 'Press Start 2P', cursive, monospace;
+    font-family: var(--primary-font)
     font-size: 1.2rem;
     text-align: center;
     margin: 32px 0 12px 0;
@@ -385,9 +386,29 @@ main {
     box-sizing: border-box;
 }
 
-.score-spacer {
-    flex: 1 1 250px;
+.score-container,
+.highscore-container,
+.PacmanName {
+    width: 250px;
+    min-width: 250px;
     max-width: 250px;
+    flex: 0 0 250px;
+    font-family: var(--primary-font);
+    font-size: 1.75rem;
+    color: #FFBE0B;
+    background: #222;
+    border: 4px solid #FFBE0B;
+    border-radius: 12px;
+    padding: 12px 0;
+    box-shadow: 0 0 16px #FFBE0B, 0 0 4px #000 inset;
+    text-shadow: 2px 2px 0 #000, 0 0 8px #FFBE0B;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+}
+
+.score-container {
+    margin: 0 210px;
 }
 
 .joystick-container {
@@ -443,7 +464,7 @@ main {
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    gap: 5px;
+    gap: 0px;
 }
 
 .difficulty-label {
@@ -468,33 +489,6 @@ main {
     width: 48px;   /* Adjust as needed */
     height: auto;
     filter: drop-shadow(0 0 6px #FFBE0B);
-}
-
-.score-container,
-.highscore-container {
-    width: 250px;
-    min-width: 250px;
-    max-width: 250px;
-    flex: 0 0 250px;
-    font-family: 'Press Start 2P', cursive, monospace;
-    font-size: 1.2rem;
-    color: #FFBE0B;
-    background: #222;
-    border: 4px solid #FFBE0B;
-    border-radius: 12px;
-    padding: 12px 0;
-    box-shadow: 0 0 16px #FFBE0B, 0 0 4px #000 inset;
-    text-shadow: 2px 2px 0 #000, 0 0 8px #FFBE0B;
-    letter-spacing: 1px;
-    margin: 0;
-}
-
-.score-container {
-    text-align: center;
-}
-
-.highscore-container {
-    text-align: center;
 }
 
 #Pacman {
