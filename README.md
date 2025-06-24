@@ -1,5 +1,6 @@
 # js-hackathon-arcade
 
+# ReadMe written by [BMileham98](https://github.com/BMileham98)
 
 ## Table of Contents
 
